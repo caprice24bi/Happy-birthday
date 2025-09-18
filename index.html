@@ -1,21 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Birthday Surprise</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Selamat Ulang Tahun Sayang ❤️</h1>
-      <p style="font-size: 18px; color: #555; margin-bottom: 20px;">
-        Tiup lilinnya lewat mic ya 😘🎂
-      </p>
-      <canvas id="birthday"></canvas>
-    </div>
-    <canvas id="confetti"></canvas>
-    <script src="script.js"></script>
-    <script src="confetti.js"></script>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiup Kue Ulang Tahun 🎂</title>
+  <!-- Google Font lucu -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-banner">🎉 Selamat Ulang Tahun! 🎉</header>
+
+  <main class="container">
+    <p class="instructions">
+      Tiup lilin lewat mic (aktifkan microphone) — atau klik api lilin untuk memadamkan.
+    </p>
+
+    <section class="stage">
+      <!-- Kue 3 layer -->
+      <div class="cake">
+        <div class="cake-layer cake-layer-1"></div>
+        <div class="cake-layer cake-layer-2"></div>
+        <div class="cake-layer cake-layer-3"></div>
+
+        <!-- Hiasan krim -->
+        <div class="cream-row cream-1"></div>
+        <div class="cream-row cream-2"></div>
+        <div class="cream-row cream-3"></div>
+
+        <!-- Stroberi -->
+        <div class="strawberry" style="left:20%;top:90px;"></div>
+        <div class="strawberry" style="left:50%;top:40px;"></div>
+        <div class="strawberry" style="left:75%;top:100px;"></div>
+
+        <!-- Lilin -->
+        <div class="candle">
+          <div class="wick"></div>
+          <div class="flame" id="flame"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">✨ Selamat! Level Up! ✨</div>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
