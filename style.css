@@ -49,7 +49,7 @@ h1 {
 }
 
 .popup-content {
-  background: rgba(255,255,255,0.85); /* konten putih semi-transparan */
+  background: rgba(255,255,255,0.5); /* konten putih semi-transparan */
   padding: 20px 30px;
   font-size: clamp(18px, 2vw, 24px); /* font responsif */
   font-weight: bold;
