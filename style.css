@@ -44,15 +44,19 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px; 
+  box-sizing: border-box;
 }
 
 .popup-content {
   background: white;
   padding: 20px 30px;
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px); 
   font-weight: bold;
   border-radius: 12px;
   color: #333;
+  max-width: 90%; 
+  text-align: center;
 }
 
 .hidden {
